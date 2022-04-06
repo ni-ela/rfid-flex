@@ -1,6 +1,6 @@
 import './index.css';
 import { DataGrid, ptBR } from '@mui/x-data-grid';
-import {renderTableButton} from '../TableButton'
+import {renderConTableButton, renderTableButton} from '../TableButton'
 
 const columns = [
     { field: 'model', headerName: 'Modelo', width: 130 },
@@ -20,14 +20,33 @@ const rows = [{
             data: '10/02/2022',
         }];
 
+        
+  const columnsContainers = [
+    { field: 'rfid', headerName: 'Container RF-ID', width: 180 },
+    { field: 'empresa', headerName: 'Empresa', width: 100 },
+    { field: 'hora', headerName: 'Hora', width: 150 },
+    { field: 'palates', headerName: 'Total de palates', width: 130 },
+    { field: 'status', headerName: 'Status', width: 150 },
+    { field: 'action', headerName: 'Ação', width: 100, renderCell: renderConTableButton },
+  ];
+
+const rowsContainers = [{ 
+    id: 1,
+    rfid: "000012455588444A",
+    empresa: "CAPACITORES A",
+    hora: "10/10/2021 12:34:10 AM",
+    palates: "12",
+    status: "no prazo"
+}];
+
 export default function Table(props) {
     const { type } = props;
     return (
         <div className="table" style={{ height: 400 }}>
             <DataGrid
                 localeText={ptBR.components.MuiDataGrid.defaultProps.localeText}
-                rows={type == 'follow-ups'? rows : []}
-                columns={type == 'follow-ups'? columns : []}
+                rows={type == 'follow-ups'? rows : rowsContainers}
+                columns={type == 'follow-ups'? columns : columnsContainers}
                 pageSize={5}
                 rowsPerPageOptions={[5]}
                 checkboxSelection

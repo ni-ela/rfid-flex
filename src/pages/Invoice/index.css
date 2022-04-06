@@ -1,0 +1,6 @@
+.invoice__group-input {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+}

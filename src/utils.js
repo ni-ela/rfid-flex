@@ -2,6 +2,7 @@ export const url = {
   '/follow-ups': 'Follow Up',
   '/follow-ups/1': '000012455588444A',
   '/containers': 'Containers no pátio',
+  '/containers/1': 'Container RF-ID 000012455588444A',
   '/finalizados': 'Finalizados',
   '/spam': 'Spam',
   '/drafts': 'Drafts',
@@ -34,8 +35,8 @@ export function timeActual() {
 
   // hours in format am/pm
   var hour = moment.getHours();
+  var suffix = hour <= 12 ? "AM":"PM";
   hour = ((hour + 11) % 12 + 1);  
-  var suffix = hour <= 12 ? "PM":"AM";
   hour = insertZero(hour);
 
   var min = moment.getMinutes();    

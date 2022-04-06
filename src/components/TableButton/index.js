@@ -13,3 +13,16 @@ export const renderTableButton = () => {
         className="btn-primary" variant="contained">Ver</Button>    
     )
 }
+
+export const renderConTableButton = () => {
+    const id = 1;
+    return (
+        <Button 
+        style={{
+            backgroundColor: "#4A8360",
+            width: 100,
+        }}
+        component={Link} to={`/containers/${id}`} 
+        className="btn-primary" variant="contained">Ver</Button>    
+    )
+}
