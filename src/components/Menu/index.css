@@ -1,0 +1,8 @@
+.menu {
+    margin-right: 30px;
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px;
+    background-color: var(--color-gray-quarternary);
+    color: var(--color-base);
+    padding: 10px;
+}
