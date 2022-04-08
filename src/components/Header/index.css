@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-green-primary);
+}
+
+.header__title, .header__username {
+    color: var(--color-base);
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.header__logo {
+    width: 45px;
+    height: 39px;
+}
+
+.header__group-profile, .header__group-name-project {
+    display: flex;
+    align-items: center;
+}

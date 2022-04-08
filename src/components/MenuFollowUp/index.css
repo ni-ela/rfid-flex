@@ -1,0 +1,22 @@
+.menu-followp__link, 
+.menu-followp__link-active {
+  font: inherit;
+  color: inherit; 
+  text-decoration: inherit;
+  padding: 10px;
+  color: #78A78B;
+  display: flex;
+  align-items: center;
+}
+
+.menu-followp__link-active {
+  background-color: var(--color-green-terciary);
+  border-left: 3px solid #4A8360;
+}
+
+.menu-followUp {
+  width: 170px;
+  display: grid;
+  margin-right: 10px;
+  grid-template-rows: 50px 50px 50px 50px 50px 50px;
+}

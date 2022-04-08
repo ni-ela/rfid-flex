@@ -1,0 +1,22 @@
+.card {
+    background-color: var(--color-gray-quintenary);
+    box-shadow: 0 1px 3px var(--color-gray-terciary), 0 1px 2px var(--color-gray-terciary);
+    text-align: center;
+    border-radius: 10px;
+    padding: 0 15px;
+    display: flex;
+    width: 237px;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    padding-top: 18px;
+}
+
+.card__text {
+    font-weight: 300;
+    margin: 0;
+}
+
+.card__title-number {
+    margin: 8px 0;
+}

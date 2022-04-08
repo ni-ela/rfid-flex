@@ -1,0 +1,7 @@
+.packinglist {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 56px 56px 56px;
+    column-gap: 50px;
+    row-gap: 40px;
+}

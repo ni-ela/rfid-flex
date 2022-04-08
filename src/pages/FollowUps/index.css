@@ -1,0 +1,31 @@
+.follow-ups {
+    text-align: center;
+    margin-top: 25px;
+    display: flex;
+}
+
+.follow-ups__top {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 20px;
+}
+
+.follow-ups__list {
+    width: 80%;
+}
+
+.groups-cards {
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    row-gap: 35px;
+    margin-left: 15px;
+}
+
+.emphasis {
+    display: block;
+    font-size: 36px;
+}
+
+.timeActual {
+    font-size: 20px;
+}

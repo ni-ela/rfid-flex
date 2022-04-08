@@ -1,0 +1,22 @@
+.container__top {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 20px;
+}
+
+.container__button{
+    max-width: 150px;
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 10px;
+}
+
+.container__labels {
+    width: 600px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.timer {
+    margin: 10px 50px;
+}
