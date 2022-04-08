@@ -10,4 +10,5 @@ import Table from './Table';
 import TableButton from './TableButton';
 import Timer from './Timer';
 
-export default Menu;
+export { Menu, Card, Accordion, Breadcrumbs, Header, 
+    MenuFollowUp, SearchInput, Table, TableButton, Input, Timer };
