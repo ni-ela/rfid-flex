@@ -4,21 +4,17 @@
     margin-bottom: 20px;
 }
 
-.containers__button{
+.container__button{
     max-width: 150px;
     display: grid;
     grid-template-rows: auto auto;
     row-gap: 10px;
 }
 
-.containers__labels {
+.container__labels {
     width: 600px;
     display: grid;
     grid-template-columns: auto auto;
-}
-
-.containers__list {
-    display: flex;
 }
 
 .timer {

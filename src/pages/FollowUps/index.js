@@ -3,12 +3,12 @@ import { Button } from '@mui/material';
 import Card from '../../components/Card';
 import Table from '../../components/Table';
 import SearchInput from '../../components/SearchInput';
-import { dateActual, timeActual } from '../../utils';
+import TimerActual from '../../components/TimerActual'
 
 function FollowUps() {
   return (
     <div className="follow-ups">
-      <div className="follow-ups__list">
+      <div className="card__base follow-ups__list">
         <div className="follow-ups__top">
           <Button variant="contained">Cadastrar</Button>
           <SearchInput label="CONSULTAR" className="top__search" />
@@ -19,7 +19,8 @@ function FollowUps() {
         <Card value={3} text={"total de follow ups"}/>
         <Card value={4} text={"containers no pátio"}/>
         <Card value={2} text={"containers recebidos"}/>
-        <label>{dateActual()} {timeActual()}</label>
+<TimerActual/>
+
       </div>
     </div>
   );

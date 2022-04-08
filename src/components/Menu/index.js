@@ -5,6 +5,7 @@ import TaskAltOutlinedIcon from '@mui/icons-material/TaskAltOutlined';
 import LayersOutlinedIcon from '@mui/icons-material/LayersOutlined';
 import InboxOutlinedIcon from '@mui/icons-material/InboxOutlined';
 import CachedOutlinedIcon from '@mui/icons-material/CachedOutlined';
+
 export default function Menu() {
   return (
     <div className="menu">

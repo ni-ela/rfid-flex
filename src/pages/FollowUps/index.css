@@ -11,9 +11,6 @@
 }
 
 .follow-ups__list {
-    padding: 25px;
-    box-shadow: 0 1px 3px var(--color-gray-terciary), 0 1px 2px var(--color-gray-terciary);
-    border-radius: 10px;
     width: 80%;
 }
 
@@ -22,4 +19,13 @@
     grid-template-rows: 100px 100px 100px;
     row-gap: 35px;
     margin-left: 15px;
+}
+
+.emphasis {
+    display: block;
+    font-size: 36px;
+}
+
+.timeActual {
+    font-size: 20px;
 }
