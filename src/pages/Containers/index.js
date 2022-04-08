@@ -50,8 +50,8 @@ function Containers() {
         <Table type="containers" rows={rows} />
       </div>
       <div className="groups-cards">
-        <Card value={3} text={"total de follow ups"} />
-        <Card value={4} text={"containers no pátio"} />
+        <Card value={1} text={"total de follow ups"} />
+        <Card value={1} text={"containers no pátio"} />
         <Card value={2} text={"containers recebidos"} />
         <TimerActual />
         <Modal
