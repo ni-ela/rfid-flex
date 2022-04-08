@@ -36,6 +36,14 @@ body {
   padding: 25px;
 }
 
+.modal__group-button {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: end;
+  column-gap: 10px;
+}
+
 h1 {
   font-size: 28px;
   line-height: 32px;

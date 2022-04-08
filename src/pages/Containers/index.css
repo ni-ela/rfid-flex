@@ -20,3 +20,10 @@
     row-gap: 35px;
     margin-left: 15px;
 }
+
+.container__group-input {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+}

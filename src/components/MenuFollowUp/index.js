@@ -8,22 +8,22 @@ export default function MenuFollowUp() {
   }
   return (
     <div className="menu-followUp">
-        <Link className={"menu-followp__link" && isHere("general")? "menu-followp__link-active" : "menu-followp__link"} to="general">
+        <Link className={window.location.pathname.includes("") ? "link-active" : "link-normal"} to="">
         Geral     
         </Link>
-        <Link  className={"menu-followp__link" && isHere("pagrec")? "menu-followp__link-active" : "menu-followp__link"} to="pagrec">
+        <Link  className={window.location.pathname.includes("/pagrec") ? "link-active" : "link-normal"} to="pagrec">
         Pagrec
         </Link>
-        <Link  className={"menu-followp__link" && isHere("invoice")? "menu-followp__link-active" : "menu-followp__link"} to="invoice">
+        <Link  className={window.location.pathname.includes("/invoice") ? "link-active" : "link-normal"} to="invoice">
         Invoice
         </Link>
-        <Link  className={"menu-followp__link" && isHere("packing-list")? "menu-followp__link-active" : "menu-followp__link"} to="packing-list">
+        <Link  className={window.location.pathname.includes("/packing-list") ? "link-active" : "link-normal"} to="packing-list">
         Packing List
         </Link>
-        <Link  className={"menu-followp__link" && isHere("agente")? "menu-followp__link-active" : "menu-followp__link"} to="agente">
+        <Link  className={window.location.pathname.includes("/agente") ? "link-active" : "link-normal"} to="agente">
         Agente de carga
         </Link>
-        <Link  className={"menu-followp__link" && isHere("despachante")? "menu-followp__link-active" : "menu-followp__link"} to="despachante">
+        <Link  className={window.location.pathname.includes("/despachante") ? "link-active" : "link-normal"} to="despachante">
         Despachante
         </Link>
     </div>
