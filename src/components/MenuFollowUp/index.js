@@ -1,31 +1,43 @@
-import { Link } from 'react-router-dom';
+import { BrowserRouter, Link, Outlet, Route, Routes } from 'react-router-dom';
 import './index.css';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
+import General from '../../pages/General';
+import Pagrec from '../../pages/Pagrec';
+import Packinglist from '../../pages/Packinglist';
+import Invoice from '../../pages/Invoice';
+import Agente from '../../pages/Agente';
+import Despachante from '../../pages/Despachante';
 
 export default function MenuFollowUp() {
-  function isHere(page, url) {
-    console.log("a", window.location.pathname.includes(page));
-    return  window.location.pathname.includes(page);
-  }
   return (
-    <div className="menu-followUp">
-        <Link className={window.location.pathname.includes("") ? "link-active" : "link-normal"} to="">
-        Geral     
-        </Link>
-        <Link  className={window.location.pathname.includes("/pagrec") ? "link-active" : "link-normal"} to="pagrec">
-        Pagrec
-        </Link>
-        <Link  className={window.location.pathname.includes("/invoice") ? "link-active" : "link-normal"} to="invoice">
-        Invoice
-        </Link>
-        <Link  className={window.location.pathname.includes("/packing-list") ? "link-active" : "link-normal"} to="packing-list">
-        Packing List
-        </Link>
-        <Link  className={window.location.pathname.includes("/agente") ? "link-active" : "link-normal"} to="agente">
-        Agente de carga
-        </Link>
-        <Link  className={window.location.pathname.includes("/despachante") ? "link-active" : "link-normal"} to="despachante">
-        Despachante
-        </Link>
-    </div>
+    <Tabs className="menu-followUp">
+      <TabList>
+        <Tab component={Link} to="">Geral</Tab>
+        <Tab component={Link} to="pagrec">Pagrec</Tab>
+        <Tab component={Link} to="invoice">Invoice</Tab>
+        <Tab component={Link} to="packing-list">Packing List</Tab>
+        <Tab component={Link} to="agente">Agente</Tab>
+        <Tab component={Link} to="despachante">Despachante</Tab>
+      </TabList>
+      <TabPanel>
+        <General />
+      </TabPanel>
+      <TabPanel>
+        <Pagrec />
+      </TabPanel>
+      <TabPanel>
+        <Invoice />
+      </TabPanel>
+      <TabPanel>
+        <Packinglist />
+      </TabPanel>
+      <TabPanel>
+        <Agente />
+      </TabPanel>
+      <TabPanel>
+        <Despachante />
+      </TabPanel>
+    </Tabs >
   );
 }

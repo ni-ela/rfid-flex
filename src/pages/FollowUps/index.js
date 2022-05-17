@@ -5,7 +5,6 @@ import Table from '../../components/Table';
 import SearchInput from '../../components/SearchInput';
 import TimerActual from '../../components/TimerActual'
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 function FollowUps() {
   const [rows, setRows] = useState([{ 
@@ -19,19 +18,20 @@ function FollowUps() {
 
   return (
     <div className="follow-ups">
+       {/*
       <div className="card__base follow-ups__list">
-        <div className="follow-ups__top">
+       
+       <div className="follow-ups__top">
           <Button variant="contained"  component={Link} to={`/follow-ups/1`} >Cadastrar</Button>
           <SearchInput label="CONSULTAR" className="top__search" />
-        </div>
-        <Table type="follow-ups" rows={rows} />
       </div>
+        </div> */}
+        <Table type="follow-ups" rows={rows} />
       <div className="groups-cards">
         <Card value={1} text={"total de follow ups"}/>
         <Card value={1} text={"containers no pátio"}/>
         <Card value={2} text={"containers recebidos"}/>
-<TimerActual/>
-
+        <TimerActual/>
       </div>
     </div>
   );

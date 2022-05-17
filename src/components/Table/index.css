@@ -1,2 +1,12 @@
 .table {
+    box-shadow: 0 1px 3px var(--color-gray-terciary), 0 1px 2px var(--color-gray-terciary);
+    border-radius: 10px;
+}
+
+.table__top {
+    margin-top: 15px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 20px;
 }

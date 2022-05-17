@@ -43,10 +43,10 @@ function Containers() {
   return (
     <div className="containers">
       <div className="card__base containers__list">
-        <div className="containers__top">
+        {/* <div className="containers__top">
           <Button variant="contained" onClick={handleOpen}>Cadastrar</Button>
           <SearchInput label={"CONSULTAR"} className="top__search" />
-        </div>
+        </div> */}
         <Table type="containers" rows={rows} />
       </div>
       <div className="groups-cards">

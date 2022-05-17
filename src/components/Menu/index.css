@@ -1,5 +1,5 @@
 .menu {
-    margin-right: 30px;
+    margin-right: 20px;
     display: grid;
     grid-template-rows: 50px 50px 50px 50px;
     background-color: var(--color-gray-quarternary);

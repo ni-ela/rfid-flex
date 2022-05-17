@@ -1,0 +1,29 @@
+.containers-finisheds {
+    text-align: center;
+    margin-top: 25px;
+    display: flex;
+}
+
+.containers-finisheds__top {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 20px;
+}
+
+.containers-finisheds__list {
+    width: 80%;
+}
+
+.groups-cards {
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    row-gap: 35px;
+    margin-left: 15px;
+}
+
+.container__group-input {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+}

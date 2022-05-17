@@ -6,14 +6,29 @@
 }
 
 .follow-up {
+    max-width: 98%;
     margin-top: 25px;
-    padding: 25px;
+    padding: 25px 0px;
     box-shadow: 0 1px 3px var(--color-gray-terciary), 0 1px 2px var(--color-gray-terciary);
     border-radius: 10px;
 }
 
 .follow-up__content {
     display: flex;
-    margin-left: 10px;
     padding-top: 25px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.follow-up__upload-label {
+    padding: 16px 10px;
+    min-height: 56px;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
 }

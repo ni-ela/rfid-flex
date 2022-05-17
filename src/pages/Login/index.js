@@ -16,6 +16,7 @@ function Login() {
           style={{
             backgroundColor: "#4A8360",
           }}
+          size="medium"
           component={Link} to="/follow-ups"
           className="login__button btn-primary" variant="contained">Entrar</Button>
         <div className="login__remember">
