@@ -26,7 +26,7 @@ function AppRoutes() {
                 <Route path="" element={<Base />}>
                     <Route path="follow-ups" exact element={<FollowUps />}></Route>
                     <Route path="follow-ups/:id" element={<FollowUp />}>
-                        <Route path="follow-ups/:id" element={<General />}></Route>
+                        <Route path="general" index element={<General />}></Route>
                         <Route path="pagrec" element={<Pagrec />}></Route>
                         <Route path="invoice" element={<Invoice />}></Route>
                         <Route path="packing-list" element={<Packinglist />}></Route>
