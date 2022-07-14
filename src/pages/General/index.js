@@ -2,23 +2,31 @@ import './index.css';
 import Input from '../../components/Input';
 import { Accordion, AccordionDetails, AccordionSummary } from '@mui/material';
 import { GridExpandMoreIcon } from '@mui/x-data-grid';
-import { useEffect, useState } from 'react';
+import { useEffect, useContext } from 'react';
 import { useOutletContext } from "react-router-dom";
+import FollowUpContext from "../FollowUp";
 
-
-function General({ sheetData }) {
-  const setSheetData = useOutletContext();
+function General(sheetData) {
+  //const setSheetData = useOutletContext();
 
   useEffect(() => {
     console.log("general", sheetData);
+    if(sheetData.sheetData !== null) {
+      document.getElementById("pedido").value = sheetData[0];
+      console.log("campo", sheetData[0]);
+      document.getElementById("fornecedor").value = sheetData[1];
+    } else {
+      document.getElementById("pedido").value = "";
+      document.getElementById("fornecedor").value = "";
+    }
   }, [sheetData]);
 
   return (
     <div className="general">
       <div className="general__group-input first-inputs">
-        <Input className="general__input" type="text" placeholder="" label="Pedido/REMARKS" />
+        <Input className="general__input" type="text" placeholder="" id="pedido" label="Pedido/REMARKS" />
         <Input className="general__input" type="text" placeholder="" label="Data sistema" />
-        <Input className="general__input" type="text" placeholder="" label="Fornecedor" />
+        <Input className="general__input" type="text" placeholder="" id="fornecedor" label="Fornecedor" />
       </div>
       <div className="general__group-input">
 
@@ -35,7 +43,7 @@ function General({ sheetData }) {
             PROTHEUS
           </AccordionSummary>
           <AccordionDetails className="general__accordion-input">
-            <Input className="general__input" type="text" placeholder="" label="S.C. Protheus" />
+            <Input className="general__input" type="text" placeholder="" value={sheetData} label="S.C. Protheus" />
             <Input className="general__input" type="text" placeholder="" label="S.I. Protheus" />
             <Input className="general__input" type="text" placeholder="" label="P.O. Protheus" />
           </AccordionDetails>

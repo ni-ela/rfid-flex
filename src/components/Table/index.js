@@ -65,7 +65,7 @@ export default function Table(props) {
             <GridToolbarContainer>
                 <div className="table__top">
                     {renderButton()}
-                    <SearchInput onChange={props.onChange} label={"CONSULTAR"} className="top__search" />
+                    {/* <SearchInput onChange={props.onChange} label={"CONSULTAR"} className="top__search" /> */}
                     <GridToolbarFilterButton variant="contained" />
                     <GridToolbarExport variant="contained" columns={[{ field: 'action', disableExport: true }]} printOptions={{ disableToolbarButton: true }} />
                 </div>

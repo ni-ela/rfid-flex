@@ -5,8 +5,8 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-export default function Accordion(props) {
-    const { summary, content } = props;
+export default function Acordion(props) {
+  const { summary, content } = props;
   return (
       <Accordion>
         <AccordionSummary

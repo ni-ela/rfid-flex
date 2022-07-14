@@ -8,6 +8,7 @@ export default function Container() {
     <div className="container">
       <div className="card__base container-item__content">
         <div className="container__labels">
+          <div>
           <label>Empresa: CAPACITORES A</label>
           <label>São Paulo - SP    CNPJ: 03.709.814/0064-71.</label>
           <label>Motorista: José Alves</label>
@@ -23,10 +24,13 @@ export default function Container() {
             style={{
               backgroundColor: "#4A8360",
             }}
-            component={Link} to="containers"
+            component={Link} to="/follow-ups/1/general"
             className="btn-primary" variant="contained">FOLLOW UP</Button>
         </div>
-        <label>Não há histórico do container</label>
+        </div>
+        <div className="container-item__history">
+          <label className="container-item__text">Não há histórico do container</label>
+        </div>
       </div>
     </div>
   );
