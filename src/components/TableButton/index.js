@@ -9,7 +9,7 @@ export const renderTableButton = () => {
             backgroundColor: "#4A8360",
             width: 100,
         }}
-        component={Link} to={`/follow-ups/${id}`} 
+        component={Link} to={`/follow-ups/${id}/general`} 
         className="btn-primary" variant="contained">Ver</Button>    
     )
 }
